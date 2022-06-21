@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Insta Travel</h1>
+    <h2>We are your premier travel agency</h2>
+    <img src="./travellogo-removebg-preview.png" width="500" height="300">
+    
+    <h1>Create a Vacation</h1>
+        <br>
+        <section class="area">
+            <label for="area">What travel area do you prefer?</label>
+            <select name="area" id="area">
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="desert">Desert</option>
+                <option value="rainforest">Rainforest</option>
+            </select>
+            <hr>
+            <section class="length of vacation">
+                <label for="amount">How many days would you like to stay?</label>
+                <input type="number" name="amount" id="amount">
+              </section>
+              <hr>
+         <section class="Are you afraid of flying?">
+          <label for="fear">Are you afraid of flying? Rate your comfort level</label>
+          <br>
+          <span>Heck yes</span>
+          <input type="range" name="fear" id="fear" value="3" min="1" max="5">
+          <span>No, I'll drive the plane</span>
+        </section>
+        <hr>
+        <section class="amenities">
+            <span>What amenities would you like?</span>
+            <br>
+            <input type="checkbox" name="amenities" id="spa salon" value="spa salon">
+            <label for="spa salon">Spa salon</label>
+            <input type="checkbox" name="amenities" id="free parking" value="free parking">
+            <label for="free parking">Free parking</label>
+            <input type="checkbox" name="amenities" id="Complimentary Breakfast" value="Complimentary Breakfast">
+            <label for="Complimentary Breakfast">Complimentary Breakfast</label>
+          </section>
+          <hr>
+          <section class="pets">
+            <span>Will any pets be traveling with you?</span>
+            <br>
+            <input type="radio" name="pets" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="pets" id="no" value="no">
+            <label for="no">No</label>
+          </section>
+          <hr>
+          <section class="phone">
+            <label for="phone">Phone number</label>
+                  <input type="tel" name="phone" id="phone">
+          </section>
+          <hr>
+          <section class="email">
+            <label for="email">Email</label>
+                  <input type="email" name="email" id="email">
+          </section>
+          <hr>
+          <section class="extra-info">
+            <label for="extra">Anything else you want to add?</label>
+            <br>
+            <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+          </section>
+          <section class="submission">
+            <input type="submit" value="Submit">
+          </section>
+</body>
+</html>
